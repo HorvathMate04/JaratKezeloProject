@@ -1,11 +1,11 @@
-class NegativKesesException extends Error {
+export class NegativKesesException extends Error {
     constructor(message: string) {
         super(message);
         this.name = "NegativKesesException";
     }
 }
 
-class Jarat {
+export class Jarat {
     jaratSzam: string;
     repterHonnan: string;
     repterHova: string;
@@ -21,7 +21,7 @@ class Jarat {
     }
 }
 
-class JaratKezelo {
+export class JaratKezelo {
     private jaratok: Map<string, Jarat>;
 
     constructor() {
